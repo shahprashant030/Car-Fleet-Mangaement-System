@@ -1,0 +1,38 @@
+ #tripmeter {
+        padding: 10px;
+        margin: 10px 0;
+      }
+      
+      p {
+        color: #222;
+        font: 24px Arial;
+      }
+      
+      span {
+        color: #00C;
+      }
+      #map {
+position: absolute;
+width: 100%;
+top: 0;
+bottom: 0;
+}
+#logo {
+
+position: absolute;
+padding: 10px;
+width: 200px;
+font-size: 24px;
+background-color: rgba(255, 255, 255, 0.9);
+left: 50%;
+margin: 20px 0 0 -100px;
+text-align: center;
+}
+#newPos {
+position: absolute;
+left: 50%;
+margin: 14px 0 0 -135px;
+}
+.gmnoprint {
+display: none;
+}

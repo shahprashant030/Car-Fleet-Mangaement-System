@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+   <div id="googleMap" style="width:100%;height:400px;"></div>
+   
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdkVWN0Lkgo5mYllPfPtWnfp5EE6d3W8U&callback=myMap">
+</script>
+    <div id="tripmeter">
+      <p>
+       <br> <br> Starting Location (lat, lon):<br/></br>
+        <span id="startLat">???</span>&deg;, <span id="startLon">???</span>&deg;
+      </p>
+      <p>
+        Current Location (lat, lon):<br/>
+        <span id="currentLat">locating...</span>&deg;, <span id="currentLon">locating...</span>&deg;
+      </p>
+      <p>
+        Distance from starting location:<br/>
+        <span id="distance">0</span> km
+      </p>
+       <p>
+        Are we here?<br/>
+        <span id="message">detecting....</span>
+      </p>
+	  <p>
+        Something New (new):<br/>
+        <span id="new">locating...</span>&deg;
+      </p>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="fence.js"></script>
+
+    <div id="map" style="width:100%;height:500px"></div>
+    <script>
+function myMap1() {
+  var bangalore = new google.maps.LatLng(13.1285,77.5837);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: bangalore, zoom: 15};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+
+  var myCity = new google.maps.Circle({
+    center: bangalore,
+    radius: 1500,
+    strokeColor: "#0000FF",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#0000FF",
+    fillOpacity: 0.4
+  });
+  myCity.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdkVWN0Lkgo5mYllPfPtWnfp5EE6d3W8U&callback=myMap1"></script>
+  </body>
+</html>
