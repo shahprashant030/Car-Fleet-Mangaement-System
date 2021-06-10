@@ -1,0 +1,5 @@
+Git repository's submodule's link:
+https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat
+
+Direct RAW download link:
+https://raw.githubusercontent.com/italojs/facial-landmarks-recognition/master/shape_predictor_68_face_landmarks.dat
